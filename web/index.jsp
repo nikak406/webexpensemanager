@@ -18,7 +18,7 @@
 	    <li><a href="/wem/CategoriesServlet">Categories</a></li>
     </ul>
     <div class="error">
-	      <%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
+        <br><%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
     </div>
 	<div>
 		<h4>Quick reference</h4>

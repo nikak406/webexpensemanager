@@ -20,7 +20,7 @@
             <li><a href="/wem/CategoriesServlet">Categories</a></li>
         </ul>
         <div class="error">
-            <%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
+            <br> <%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
         </div>
         <h4>Report</h4>
         <table border = "1px" cellpadding="8px" valign="center">

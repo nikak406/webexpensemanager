@@ -18,7 +18,7 @@
 			<li><a href="/wem/CategoriesServlet">Categories</a></li>
 		</ul>
 		<div class="error">
-			<%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
+            <br><%=(request.getAttribute("errorMessage")==null)? "":request.getAttribute("errorMessage")%>
 		</div>
 		<h4>Specify the report you need:</h4>
 		<table border="0" cellpadding="8px">
