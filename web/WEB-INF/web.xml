@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>WebExpenseManager</servlet-name>
+        <servlet-class>webexpensemanager.servlet.WebExpenseManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <servlet-class>webexpensemanager.servlet.CategoriesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>webexpensemanager.servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExpenseServlet</servlet-name>
+        <servlet-class>webexpensemanager.servlet.ExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebExpenseManager</servlet-name>
+        <url-pattern>/WebExpenseManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <url-pattern>/CategoriesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+         <servlet-name>ExpenseServlet</servlet-name>
+         <url-pattern>/ExpenseServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/redirect.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
